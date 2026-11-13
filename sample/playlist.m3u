@@ -1,0 +1,17 @@
+#EXTM3U x-tvg-url="https://crestrondude.github.io/nova-player/sample/guide.xml"
+#EXTINF:-1 tvg-id="live-test" tvg-name="Live Test" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/live-test.png" group-title="Test channels",Live Test
+https://demo.unified-streaming.com/k8s/live/stable/live.isml/.m3u8
+#EXTINF:-1 tvg-id="test-pattern" tvg-name="Test Pattern" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/test-pattern.png" group-title="Test channels",Test Pattern
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
+#EXTINF:-1 tvg-id="open-movies-1" tvg-name="Open Movies 1" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/open-movies-1.png" group-title="Open movie channels",Open Movies 1
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="open-movies-2" tvg-name="Open Movies 2" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/open-movies-2.png" group-title="Open movie channels",Open Movies 2
+https://test-streams.mux.dev/tos_ismc/main.m3u8
+#EXTINF:596 tvg-type="movie" tvg-name="Big Buck Bunny (2008)" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/big-buck-bunny-poster.jpg" group-title="Open movies",Big Buck Bunny (2008)
+https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4
+#EXTINF:654 tvg-type="movie" tvg-name="Elephants Dream (2006)" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/elephants-dream-poster.jpg" group-title="Open movies",Elephants Dream (2006)
+https://archive.org/download/ElephantsDream/ed_hd.mp4
+#EXTINF:52 tvg-type="movie" tvg-name="Sintel - Trailer (2010)" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/sintel-poster.jpg" group-title="Open movies",Sintel - Trailer (2010)
+https://download.blender.org/durian/trailer/sintel_trailer-720p.mp4
+#EXTINF:734 tvg-type="movie" tvg-name="Tears of Steel (2012)" tvg-logo="https://crestrondude.github.io/nova-player/sample/images/tears-of-steel-poster.jpg" group-title="Open movies",Tears of Steel (2012)
+https://test-streams.mux.dev/tos_ismc/main.m3u8
