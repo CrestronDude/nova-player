@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA Player testing instructions</title>
+<style>
+:root { color-scheme: light dark; }
+body { margin: 0; font: 16px/1.6 system-ui, "Segoe UI", sans-serif; background: #ffffff; color: #1b1f2a; }
+@media (prefers-color-scheme: dark) { body { background: #0b1020; color: #e8ecff; } a { color: #5ce1ff; } }
+main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 30px; margin: 0 0 4px; }
+h2 { font-size: 19px; margin-top: 30px; }
+code { font-size: 15px; background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+li { margin-bottom: 10px; }
+.dim { opacity: .75; }
+</style>
+</head>
+<body>
+<main>
+<h1>NOVA Player testing instructions</h1>
+<p class="dim">For Amazon's app reviewers · NOVA Player for Fire TV, version 1.0.0</p>
+
+<p>NOVA Player is a media player for the viewer's own IPTV playlists (M3U) and Xtream Codes logins. It contains no
+channels or content of its own, so a source has to be added to test it. Please use our <a href="sample/">sample
+source</a>, which holds only freely licensed material (the Blender Foundation's open movies, Creative Commons
+Attribution, and public HLS test streams from Unified Streaming, Apple and Mux).</p>
+
+<ol>
+<li>Open NOVA Player. The first screen is <b>Add your first source</b> (the labels below are the English ones; the app
+follows the Fire TV's language).</li>
+<li><b>M3U / M3U8 link</b> is already selected. Select <b>Playlist address</b> and enter
+<code>https://crestrondude.github.io/nova-player/tv.m3u</code> (the same playlist is also at
+<code>https://crestrondude.github.io/nova-player/sample/playlist.m3u</code>). <b>Name (optional)</b> can stay empty.
+Select <b>Connect</b>.</li>
+<li>Home shows the sample: Live TV (4 channels), the TV Guide (filled for 60 days), Movies (4 open films).</li>
+<li><b>Watching needs NOVA Player Premium</b>, our yearly subscription (in-app item <code>novaplayer.premium</code>, term
+<code>novaplayer.premium.yearly</code>, 7-day free trial). Select any channel or film: the player shows the offer with
+Amazon's price and trial, <b>Start free trial</b>, <b>Restore purchase</b> and <b>Not now</b>. Please use your usual test
+account to subscribe; after the purchase the chosen channel or film plays at once. <b>Upgrade to NOVA Player
+Premium</b> (top right, beside the clock, on Home and in every section that plays) opens the same offer; it disappears
+once the subscription is active. Settings &gt; NOVA Player Premium shows the subscription and offers Restore.</li>
+<li>Everything works with the Fire TV remote: D-pad, Select, Back, Menu (options for the focused item; Home rows can be
+moved or hidden there), Rewind/Fast-forward (a page down long lists), Play/Pause.</li>
+<li>Languages: NOVA Player follows the Fire TV's language. <b>Settings &gt; Display &gt; 🌐 Language</b> switches
+between all 22 (each listed in its own script) without leaving the screen; <b>Automatic</b> returns to the Fire TV's
+language.</li>
+</ol>
+
+<h2>Network</h2>
+<p>The manifest allows cleartext http because many viewers' own playlist servers use plain http. NOVA Player connects
+only to the addresses the viewer enters, and to Amazon for the subscription.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:admin@intelligentai.services">admin@intelligentai.services</a> · <a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
